@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+}
+.background{
+    background-image: url(images/daniel-olah-MvoWhoTzEqo-unsplash.jpg);
+}
+.section{
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+.navbar ul li:hover{
+    color: rgb(161, 245, 66);
+}
+.rightnav button:hover{
+    width: 70px;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-0.2rem);
+    border-color: rgb(66, 242, 245);
+    cursor: pointer;
+    color: rgb(245, 84, 66);
+}
+.rightnav input{
+    padding: 0.3rem;
+    background: none;
+    color: white;
+    border-radius: 10px;
+}
+.rightnav button{
+    padding: 0.3rem;
+    color: white;
+    border-radius: 10px;
+    margin: 0.2rem;
+    background: none;
+}
+.navbar ul li{
+    display: inline;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.logo span{
+    padding: 0 0.5rem;
+}
+.navbar ul{
+    display: flex;
+    border: 2px solid black;
+    max-width: 30%;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.burger{
+    left: 20px;
+    position: absolute;
+}
+.line{
+    width: 34px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+}
+
+
+/* media queries */
+
+@media(max-width:999px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist{
+        flex-direction: column;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .height{
+        height: 72px;
+    }
+}
